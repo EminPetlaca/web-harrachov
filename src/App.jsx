@@ -1,10 +1,12 @@
+import Button from "@mui/material/Button";
+import PositionedMenu from "./components/Menus/LogMenu";
 
-import React from 'react'
 
 export default function App() {
   return (
     <>
-    <h1> Web Obce </h1>
+    <PositionedMenu/>
+   <h1>Web Čimelice</h1>
     </>
-  )
+  );
 }
