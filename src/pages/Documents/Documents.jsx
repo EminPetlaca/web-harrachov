@@ -1,11 +1,11 @@
 import React from 'react'
-import Nav from '../../components/Navbar/Nav'
+import Header from '../../components/Header/Header'
 
 
 export default function Dokumenty() {
   return (
     <>
-    <Nav />
+    <Header />
     <h1>Dokumenty</h1>
     </>
   )

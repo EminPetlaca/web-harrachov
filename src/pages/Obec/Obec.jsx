@@ -1,10 +1,11 @@
 import React from "react";
-import Nav from '../../components/Navbar/Nav'
+import Header from "../../components/Header/Header";
+
 
 export default function Obec() {
   return (
     <>
-      <Nav />
+      <Header />
       <h1>Obec</h1>
     </>
   );

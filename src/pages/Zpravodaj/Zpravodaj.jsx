@@ -1,9 +1,9 @@
-import Nav from "../../components/Navbar/Nav"
+import Header from "../../components/Header/Header";
 
 export default function Zpravodaj() {
   return (
     <>
-      <Nav />
+      <Header />
       <h1>Zpravodaj</h1>
     </>
   );

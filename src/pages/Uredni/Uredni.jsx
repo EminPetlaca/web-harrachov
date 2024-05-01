@@ -1,9 +1,9 @@
-import Nav from "../../components/Navbar/Nav"
+import Header from "../../components/Header/Header";
 
 export default function Uredni() {
   return (
     <>
-      <Nav />
+      <Header />
       <h1>Uredni deska</h1>
     </>
   );
