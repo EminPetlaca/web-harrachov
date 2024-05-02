@@ -1,48 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
+
 .header {
-    width: 98%;
-    height: 4rem;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden;
+  width: 98%;
+  height: 4rem;
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-
-
-
 .nav-links {
-    list-style-type: none;
-    align-items: center;
-    flex-direction: row;
-
+  list-style-type: none;
+  align-items: center;
+  flex-direction: row;
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .nav-links li {
-    display: inline;
-    padding: 15px;
+  display: inline;
+  padding: 15px;
 }
-
 
 /*logo styling*/
 
 .nav-logo {
-    padding: 5px;
+  padding: 5px;
 }
 .header > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-logo img {
-    height:4rem
+  height: 4rem;
 }
 * {
-    background-color: #0E1518 !important;
-    color: #EAF0F3 !important;
+  background-color: #0e1518 !important;
+  color: #eaf0f3 !important;
+}
+
+/*drop down icon styling*/
+
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+    margin: 2px;
+  padding: 4px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
