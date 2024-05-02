@@ -1,0 +1,6 @@
+.drop-container{
+    width: 100%;
+    background-color: rgb(69, 145, 212);
+    height: 80px;
+    z-index: 10000;
+}
