@@ -6,8 +6,9 @@ export default function Home() {
   return (
     <>
       <Header />
+      {/* show this when "Obec" clicked */}
       <ObecDrop/>
-      <h1>Home</h1>
+      
      
     </>
   );

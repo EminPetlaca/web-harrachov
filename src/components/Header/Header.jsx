@@ -22,7 +22,7 @@ export default function Header() {
             <Link to={"/uredni"}>
               <li>Úřední </li>
             </Link>
-            <Link to={"/obec"}>
+            <Link>
               <li>
                 Obec <i class="arrow down"></i>
               </li>
