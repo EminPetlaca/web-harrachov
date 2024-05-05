@@ -1,11 +1,19 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
-import * as React from "react";
+import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Stack from "@mui/material/Stack";
 import { deepOrange } from "@mui/material/colors";
+import ObecDrop from "../Menus/DropDowns/ObecDrop";
 
 export default function Header() {
+  const [isObecDropVisible, setIsObecDropVisible] = useState(false);
+
+  const toggleObecDropVisibility = (e) => {
+    e.preventDefault(); // Prevent the default link behavior
+    setIsObecDropVisible(!isObecDropVisible);
+  };
+
   return (
     <>
       <div className="header">
@@ -23,7 +31,7 @@ export default function Header() {
               <li>Úřední </li>
             </Link>
             <Link>
-              <li>
+              <li onClick={toggleObecDropVisibility}>
                 Obec <i class="arrow down"></i>
               </li>
             </Link>
@@ -43,6 +51,8 @@ export default function Header() {
       </div>
 
       <hr />
+
+      {isObecDropVisible && <ObecDrop />}
     </>
   );
 }

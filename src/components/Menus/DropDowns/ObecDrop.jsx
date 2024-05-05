@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 
 export default function ObecDrop() {
+
   return (
     <>
         {/* drop down of link "Obec" */}
@@ -10,7 +11,7 @@ export default function ObecDrop() {
     <ul className="drop-menu">
         <li><Link to="/verejne-vyhlasky">Veřejné vyhlášky</Link></li>
         <li><Link to="/pozvanky">Pozvánky na jednání zastupitelstva</Link></li>
-        <li><Link to="/zapisy">Zápisy ze zasedání zastupitelstva obce</Link></li>
+        <li><Link to="/zapisy">Zasedání zastupitelstva obce</Link></li>
         <li><Link to="/zpravodaj">Čimelický zpravodaj</Link></li>
       </ul>
       <ul className="drop-menu">
@@ -20,7 +21,7 @@ export default function ObecDrop() {
         <li><Link to="/jizdni-rady">Jízdní řady</Link></li>
       </ul>
       <ul className="drop-menu">
-        <li><Link to="/sbor-dobrovolnych-hasicu">Sbor dobrovolných hasičů Čimelice</Link></li>
+        <li><Link to="/sbor-dobrovolnych-hasicu">Dobrovolný hasiči Čimelice</Link></li>
         <li><Link to="/zajmova-sdruzeni">Zajmová sdružení pro volný čas</Link></li>
         <li><Link to="/turistika-sluzby">Turistika, zajímavosti a služby</Link></li>
         <li><Link to="/sport">Sport</Link></li>

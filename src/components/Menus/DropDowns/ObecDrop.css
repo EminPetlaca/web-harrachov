@@ -2,12 +2,15 @@
 
 .drop-container {
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(253, 253, 253);
   height: 200px;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  padding: 15px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding in the width calculation */
 }
 
 .drop-menu li {
@@ -16,7 +19,12 @@
 
 .drop-menu li a {
   text-decoration: none;
-  padding: 1px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: font-size 0.1s;
 }
 
+.drop-menu li:hover {
+  font-size: 16.5px; /* Increase font size on hover */
+  margin: 1px; /* Adjust margin to compensate for font size increase */
+}
