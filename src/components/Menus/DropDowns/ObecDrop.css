@@ -4,14 +4,20 @@
   width: 100%;
   background-color: rgb(253, 253, 253);
   height: 200px;
-
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
-  padding: 15px; /* Add padding for better spacing */
-  box-sizing: border-box; /* Include padding in the width calculation */
+  flex-wrap: wrap;
+  padding: 15px; 
+  box-sizing: border-box; 
+  z-index: 1;
+  margin-top: -9px;
+  transition: opacity 200ms;
+
+  
 }
+
 
 .drop-menu li {
   list-style-type: none;

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
 
+
 .header {
   width: 98%;
   height: 4rem;
@@ -7,6 +8,7 @@
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  z-index: 0;
 }
 
 .nav-links {
@@ -21,6 +23,7 @@
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+
 }
 
 .nav-links li {
@@ -41,11 +44,9 @@
 
 .header-logo img {
   height: 4rem;
+  width: 8rem;
 }
-* {
-  background-color: #0e1518 !important;
-  color: #eaf0f3 !important;
-}
+
 
 /*drop down icon styling*/
 
