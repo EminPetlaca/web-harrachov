@@ -52,7 +52,7 @@ export default function Header() {
 
       <hr />
 
-      {isObecDropVisible && <ObecDrop />}
+      {isObecDropVisible && <ObecDrop className="header-obecDrop" />}
     </>
   );
 }

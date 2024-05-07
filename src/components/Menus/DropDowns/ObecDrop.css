@@ -2,7 +2,7 @@
 
 .drop-container {
   width: 100%;
-  background-color: rgb(253, 253, 253);
+  background-color:#000032 !important;
   height: 200px;
   position: absolute;
   display: flex;
@@ -13,11 +13,9 @@
   box-sizing: border-box; 
   z-index: 1;
   margin-top: -9px;
-  transition: opacity 200ms;
 
   
 }
-
 
 .drop-menu li {
   list-style-type: none;
@@ -25,7 +23,6 @@
 
 .drop-menu li a {
   text-decoration: none;
-
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: font-size 0.1s;
 }

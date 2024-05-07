@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
-
+body {
+  margin: 4px;
+  padding: 4px;
+}
 
 .header {
   width: 98%;
@@ -44,14 +47,14 @@
 
 .header-logo img {
   height: 4rem;
-  width: 8rem;
+  width: 4rem;
 }
 
 
 /*drop down icon styling*/
 
 .arrow {
-  border: solid rgb(255, 255, 255);
+  border: solid rgb(0, 0, 0);
   border-width: 0 2px 2px 0;
   display: inline-block;
     margin: 2px;
@@ -61,4 +64,7 @@
 .down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
+}
+.header-obecDrop {
+  background-color: #000032 !important;
 }

@@ -1,6 +1,17 @@
-.main-section-container{
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.hero{
     width: 100%;
     height: 600px;
     background-color: white !important;
     margin-top: -8px;
 }
+.backdrop {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
