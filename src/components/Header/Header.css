@@ -6,11 +6,11 @@ body {
 
 .header {
   width: 98%;
-  height: 4rem;
-  background-color: whitesmoke;
+  height: 4.5rem;
+  background-color: rgb(255, 255, 255) !important;
   display: flex;
   justify-content: space-between;
-  overflow: hidden;
+ 
   z-index: 0;
 }
 
@@ -38,6 +38,7 @@ body {
 
 .nav-logo {
   padding: 5px;
+  margin-top: 5px;
 }
 .header > div {
   display: flex;
@@ -46,9 +47,11 @@ body {
 }
 
 .header-logo img {
-  height: 4rem;
-  width: 4rem;
+  height: 3rem;
+  width: 3.5rem;
+  margin-left: 10px;
 }
+
 
 
 /*drop down icon styling*/
@@ -68,3 +71,4 @@ body {
 .header-obecDrop {
   background-color: #000032 !important;
 }
+

@@ -1,20 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
 
-.drop-container {
+body .drop-container {
   width: 100%;
-  background-color:#000032 !important;
-  height: 200px;
-  position: absolute;
+  background-color: rgba(3,111,216,255) ;
+  height: 150px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  flex-wrap: wrap;
-  padding: 15px; 
-  box-sizing: border-box; 
-  z-index: 1;
+  align-items: center;
   margin-top: -9px;
-
-  
 }
 
 .drop-menu li {
@@ -25,6 +18,7 @@
   text-decoration: none;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: font-size 0.1s;
+  color: white;
 }
 
 .drop-menu li:hover {
