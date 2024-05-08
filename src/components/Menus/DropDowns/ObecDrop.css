@@ -2,12 +2,13 @@
 
 body .drop-container {
   width: 100%;
-  background-color: rgba(3,111,216,255) ;
+  background-color: rgba(3,111,216,0.7) ;
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: -9px;
+  position: fixed;
 }
 
 .drop-menu li {

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import ObecDrop from "../Menus/DropDowns/ObecDrop";
+import AccountMenu from "../Avatar/AccountMenu";
 
 export default function Header() {
   const [isObecDropVisible, setIsObecDropVisible] = useState(false);
@@ -44,7 +45,7 @@ export default function Header() {
 
         {/* header profile */}
         <div className="header-profile">
-          <Avatar src="/broken-image.jpg" />
+          <AccountMenu/>
         </div>
       </div>
 
