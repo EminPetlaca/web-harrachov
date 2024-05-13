@@ -34,6 +34,11 @@ export default function ZnakSection() {
           <li>Obecní knihovna</li>
           <li>pošta</li>
         </ul>
+        <img
+          src="src\assets\img\libeznice-pic2.jpg"
+          alt=""
+          className="znak-img"
+        />
       </div>
     </>
   );
