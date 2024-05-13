@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
+
 .news-container {
     display:flex;
     justify-content: center;
@@ -5,7 +7,7 @@
     gap: 90px;
     margin-top: 5px;
     margin-bottom: 5px;
-    overflow: hidden;
+   
     width: 1100px;
     margin: auto;
     
