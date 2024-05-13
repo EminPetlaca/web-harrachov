@@ -13,7 +13,7 @@ export default function NewsSection() {
         <>
 
             <h1 className='aktuality-nadpis'><Link to="/zpravodaj">Aktuality↓</Link></h1>
-            <hr />
+            
             <div className="news-container">
 
                 <Card className='aktuality-card' sx={{ maxWidth: 300, boxShadow: 3 }}>
