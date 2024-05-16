@@ -4,12 +4,13 @@ export default function ZnakSection() {
   return (
     <>
       <div className="znak-section-container">
+     
+        <div className="znak-text-container">
         <img
           src="src\assets\img\Cimelice_logo.png"
           alt=""
           className="znak-img"
         />
-        <div className="znak-text-container">
           <h1 className="znak-title font">Základní informace</h1>
           <p className="znak-text ">
             Středověké jádro Líbeznic leželo v místě, nyní nazývaném Na Hůrce.
@@ -21,24 +22,28 @@ export default function ZnakSection() {
             staly pro svou polohu, kostel i školu centrem blízkého okolí, což
             trvá dodnes.
           </p>
+        
         </div>
-        <ul className="znak-list">
-          <h1 className="znak-list-title font">V obci je:</h1>
-          <li>základní škola</li>
-          <li>mateřská škola</li>
-          <li>
-            budova zdravotního střediska se dvěma obvody, <br />
-            dětským střediskem, zubním střediskem s laboratoří
-          </li>
-          <li>oční optika s pravidelnými návštěvami lékaře</li>
-          <li>Obecní knihovna</li>
-          <li>pošta</li>
-        </ul>
-        <img
-          src="src\assets\img\libeznice-pic2.jpg"
-          alt=""
-          className="znak-img"
-        />
+
+        <div className="znak-text-container">
+          <ul className="znak-list">
+            <h1 className="znak-list-title font">V obci je:</h1>
+            <li>základní škola</li>
+            <li>mateřská škola</li>
+            <li>
+              budova zdravotního střediska se dvěma obvody, <br />
+              dětským střediskem, zubním střediskem s laboratoří
+            </li>
+            <li>oční optika s pravidelnými návštěvami lékaře</li>
+            <li>obecní knihovna</li>
+            <li>pošta</li>
+          </ul>
+          <img
+            src="src\assets\img\libeznice-pic2.jpg"
+            alt=""
+            className="znak-img"
+          />
+        </div>
       </div>
     </>
   );

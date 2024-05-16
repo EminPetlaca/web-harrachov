@@ -1,25 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
 
 .znak-section-container {
-  height: 70vh;
-  background-color: rgb(20, 20, 105);
-  margin-top: 40px;
+  height: 75vh;
+  background-color: rgb(13, 13, 188);
+  margin-top: 7rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   flex-direction: column;
   color: white;
-  padding: 2rem;
+  padding: 3rem;
   font-size: 1rem;
   font-style: normal !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); /* Shadow at the bottom */
  
 }
 
 
 .znak-img {
   width: auto;
-  height: 325px;
+  max-height: 245px;
   margin-left: 30px;
   border-radius: 5%;
 }
