@@ -5,15 +5,16 @@
     justify-content: center;
     align-items: center;
     gap: 90px;
-    margin-top: 5px;
+    margin-top: 20px;
     margin-bottom: 5px;
-   
+    height: 350px;
     width: 1100px;
     margin: auto;
     
 }
 .aktuality-nadpis {
     text-align: center;
+    margin-top: 3.5rem;
 
 }
 .aktuality-nadpis a {
@@ -30,4 +31,12 @@
 }
 .aktuality-card {
     box-shadow: 5px 5px 11px 5px rgba(0,0,0,0.51);
+}
+
+/*news button styling*/
+
+.news-button-container{
+    display: flex;
+justify-content: center;
+margin-top: 3.5rem;
 }

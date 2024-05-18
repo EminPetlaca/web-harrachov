@@ -1,3 +1,35 @@
 .about-section-container{
-    height: 90vh;
+    height: 170vh;
+    padding: 2rem;
+   
 }
+
+.about-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+}
+
+.about-text{
+    text-align: right;
+    width: 400px;
+}
+
+.about-text-left{
+    text-align: left;
+    width: 400px;
+}
+
+
+
+
+.news-img{
+   max-height: 16rem;
+    width: 500px;
+}
+
+

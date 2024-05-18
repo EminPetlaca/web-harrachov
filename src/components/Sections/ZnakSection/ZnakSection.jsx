@@ -11,7 +11,7 @@ export default function ZnakSection() {
           alt=""
           className="znak-img"
         />
-          <h1 className="znak-title font">Základní informace</h1>
+          <h1 className="znak-title ">Základní informace</h1>
           <p className="znak-text ">
             Středověké jádro Líbeznic leželo v místě, nyní nazývaném Na Hůrce.
             Obrysy původní návsi zůstaly dodnes patrné. Přes obec vedla jedna z
@@ -27,7 +27,7 @@ export default function ZnakSection() {
 
         <div className="znak-text-container">
           <ul className="znak-list">
-            <h1 className="znak-list-title font">V obci je:</h1>
+            <h1 className="znak-list-title ">V obci je:</h1>
             <li>základní škola</li>
             <li>mateřská škola</li>
             <li>
