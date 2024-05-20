@@ -1,22 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
 
 .news-container {
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 90px;
+    gap: 60px;
     margin-top: 20px;
-    margin-bottom: 5px;
-    height: 350px;
-    width: 1100px;
-    margin: auto;
-    
+    margin-bottom: 20px;
+    padding: 0 10px;
 }
+
 .aktuality-nadpis {
     text-align: center;
     margin-top: 3.5rem;
-
 }
+
 .aktuality-nadpis a {
     text-decoration: none;
     color: black;
@@ -25,18 +24,21 @@
     font-style: normal;
     transition: all 500ms ease-in-out;
 }
+
 .aktuality-nadpis a:hover {
     color: rgb(6, 71, 136);
-    
 }
+
 .aktuality-card {
-    box-shadow: 5px 5px 11px 5px rgba(0,0,0,0.51);
+    box-shadow: 5px 5px 11px 5px rgba(0, 0, 0, 0.51);
+    max-width: 100%;
+    flex: 1 1 300px;
+    margin: 10px;
 }
 
-/*news button styling*/
-
-.news-button-container{
+/* news button styling */
+.news-button-container {
     display: flex;
-justify-content: center;
-margin-top: 3.5rem;
+    justify-content: center;
+    margin-top: 3.5rem;
 }

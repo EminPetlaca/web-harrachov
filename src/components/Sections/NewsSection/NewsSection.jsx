@@ -21,15 +21,15 @@ export default function NewsSection() {
             component="img"
             alt="green iguana"
             height="140"
-            image="src\assets\img\cimelice-pic2.jpg"
+            image="src\assets\img\skola_bast.jpg"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              ZÁKLADNÍ ŠKOLA V BAŠTI
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              Vúterý 13.2. 2024 předali zástupci Svazku obcí Pod Beckovem
+              oficiálně staveniště pro výstavbu svazkové základní školy v Bašti.
             </Typography>
           </CardContent>
           <CardActions>
@@ -41,15 +41,16 @@ export default function NewsSection() {
             component="img"
             alt="green iguana"
             height="140"
-            image="src\assets\img\cimelice-pic2.jpg"
+            image="src\assets\img\libeznice-sport.jpg"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              SPORT LIBEZNICE
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              Na multifunkčním hřišti v Areálu zdraví jsou nově nainstalované
+              koše na basketbal. Můžete si zlepšt svoji techniku v hodu na koš
+              nebo si třeba zahrát i na jeden koš.
             </Typography>
           </CardContent>
           <CardActions>
@@ -61,15 +62,15 @@ export default function NewsSection() {
             component="img"
             alt="green iguana"
             height="140"
-            image="src\assets\img\cimelice-pic2.jpg"
+            image="src\assets\img\libeznice-4-4.jpg"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Lizard
+              DRÁŽDANY V LIBEZNICÍCH
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
+              Veřejné setkání ohledně vysokorychlostní trati Praha - Drážďany,
+              které se bude konat 27. května 2024 od 17:00 v hale Na Chrupavce.
             </Typography>
           </CardContent>
           <CardActions>
@@ -78,13 +79,8 @@ export default function NewsSection() {
         </Card>
       </div>
 
-
       <div className="news-button-container">
-        <Button
-          className="news-button"
-          variant="outlined"
-          
-        >
+        <Button className="news-button" variant="outlined">
           Všechny aktuality
         </Button>
       </div>
