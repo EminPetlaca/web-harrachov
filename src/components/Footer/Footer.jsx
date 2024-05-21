@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <hr />
+      
       <div className="footer-container">
         <div className="footer-informace footer-block">
           <h2>Informace pro vás:</h2>

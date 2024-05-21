@@ -5,6 +5,7 @@ import NewsSection from '../../components/Sections/NewsSection/NewsSection';
 import ZnakSection from '../../components/Sections/ZnakSection/ZnakSection';
 import Footer from '../../components/Footer/Footer';
 import AboutSection from '../../components/Sections/AboutSection/AboutSection';
+import SecondFooter from '../../components/Footer/SecondFooter';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ZnakSection/>
       <AboutSection/>
       <Footer />
+      <SecondFooter/>
      
     </>
   );
