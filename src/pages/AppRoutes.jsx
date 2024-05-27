@@ -1,9 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Home/Home";
 
-import Uredni from "./Uredni/Uredni";
-import Zpravodaj from "./Zpravodaj/Zpravodaj";
-import Dokumenty from "./Documents/Documents";
+
 
 export default function AppRoutes() {
   return (
@@ -11,9 +9,7 @@ export default function AppRoutes() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/uredni" element={<Uredni />} />
-          <Route path="/zpravodaj" element={<Zpravodaj />} />
-          <Route path="/dokumenty" element={<Dokumenty />} />
+      
         </Routes>
       </BrowserRouter>
     </>

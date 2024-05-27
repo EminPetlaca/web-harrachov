@@ -2,13 +2,16 @@
 
 body .drop-container {
   width: 100%;
-  background-color: rgba(3,111,216,0.7) ;
+  background-color: rgba(91, 93, 95, 0.7) ;
   height: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: -9px;
+  margin-top: -15px;
   position: fixed;
+  backdrop-filter: blur(2px); /* Adjust the blur radius as needed */
+  -webkit-backdrop-filter: blur(2px); /* For better browser compatibility */
 }
 
 .drop-menu li {

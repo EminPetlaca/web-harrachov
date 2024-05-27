@@ -11,7 +11,7 @@ body {
   display: flex;
   justify-content: space-between;
  
-  z-index: 0;
+  z-index: 10;
 }
 
 .nav-links {
@@ -31,7 +31,7 @@ body {
 
 .nav-links li {
   display: inline;
-  padding: 15px;
+  padding: 18px;
 }
 
 /*logo styling*/
@@ -72,3 +72,67 @@ body {
   background-color: #000032 !important;
 }
 
+/*burger icon menu style*/
+
+.burger-icon{
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: none;
+  
+}
+
+
+.header-menu.show-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-menu ul {
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-menu li {
+
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .header-menu ul{
+    display: none;
+  }
+  .burger-icon {
+    display: block;
+  }
+}
+
+/* Additional styles for the menu when it's visible */
+.header-menu.show-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 4.5rem;
+  right: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-menu ul {
+  flex-direction: column;
+  width: 100%;
+}
+
+.header-menu li {
+ 
+  text-align: center;
+}

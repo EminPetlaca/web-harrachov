@@ -9,16 +9,16 @@ export default function ObecDrop(props) {
         
         <ul className="drop-menu">
           <li>
-            <Link className="link" to="/verejne-vyhlasky">Veřejné vyhlášky</Link>
+            <Link className="link" to="/verejne-vyhlasky">Povinně zveřejňované smlouvy</Link>
           </li>
           <li>
-            <Link className="link" to="/pozvanky">Pozvánky na jednání zastupitelstva</Link>
+            <Link className="link" to="/pozvanky">Povodňový plán</Link>
           </li>
           <li>
-            <Link className="link" to="/zapisy">Zasedání zastupitelstva obce</Link>
+            <Link className="link" to="/zapisy">Projektova mapa</Link>
           </li>
           <li>
-            <Link className="link" to="/zpravodaj">Čimelický zpravodaj</Link>
+            <Link className="link" to="/zpravodaj">Rezervace</Link>
           </li>
         </ul>
         <ul className="drop-menu">
