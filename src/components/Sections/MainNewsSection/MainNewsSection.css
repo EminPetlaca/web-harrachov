@@ -1,0 +1,30 @@
+.news-title {
+    text-align: center;
+    width: 100%;
+    font-style: bold;
+}
+.news-row {
+    width: 100%;
+}
+
+.news-articles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.news-row {
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.news-help {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
