@@ -10,7 +10,7 @@ body {
   background-color: rgb(255, 255, 255) !important;
   display: flex;
   justify-content: space-between;
- 
+
   z-index: 10;
 }
 
@@ -26,7 +26,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
-
 }
 
 .nav-links li {
@@ -52,15 +51,13 @@ body {
   margin-left: 10px;
 }
 
-
-
 /*drop down icon styling*/
 
 .arrow {
   border: solid rgb(0, 0, 0);
   border-width: 0 2px 2px 0;
   display: inline-block;
-    margin: 2px;
+  margin: 2px;
   padding: 4px;
 }
 
@@ -74,48 +71,23 @@ body {
 
 /*burger icon menu style*/
 
-.burger-icon{
-  position: absolute;
-  top: 4%;
-  left: 50%;
-  width: 2rem;
-  height: 2rem;
-  display: none;
-  
-}
-
-
-.header-menu.show-menu {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 4.5rem;
-  right: 0;
-  background-color: white;
-  width: 100%;
-  z-index: 1000;
-}
-
-.header-menu ul {
-  flex-direction: column;
-  width: 100%;
-}
-
-.header-menu li {
-
-  text-align: center;
+.burger-icon {
+  display: none; /* Hide the burger icon by default */
 }
 
 @media screen and (max-width: 768px) {
-  .header-menu ul{
-    display: none;
-  }
   .burger-icon {
     display: block;
+    position: absolute;
+    top: 20px;
+    left: 47%;
+
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
   }
 }
 
-/* Additional styles for the menu when it's visible */
 .header-menu.show-menu {
   display: flex;
   flex-direction: column;
@@ -133,6 +105,34 @@ body {
 }
 
 .header-menu li {
- 
   text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .header-menu {
+    position: absolute;
+    top: 4.5rem; /* Adjust according to the header height */
+    right: 0;
+    left: 0; /* Extend the menu to full width */
+    background-color: white;
+    border-top: 1px solid #ccc;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Add padding to the menu items */
+  }
+
+  .header-menu ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-menu li {
+    text-align: center;
+    padding: 18px; /* Adjust padding as needed */
+    border-bottom: 1px solid #ccc; /* Add a border between menu items */
+    display: block; /* Display list items as block */
+  }
 }

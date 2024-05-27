@@ -1,37 +1,49 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
-import Avatar from "@mui/material/Avatar";
-import ObecDrop from "../Menus/DropDowns/ObecDrop";
+import React, { useState, useEffect } from "react";
 import AccountMenu from "../Avatar/AccountMenu";
-import DokumentyDrop from "../Menus//DokumentyDrop/DokumentyDrop";
-import UredniDrop from "../Menus//UredniDrop/UredniDrop";
-import DensityMediumOutlinedIcon from '@mui/icons-material/DensityMediumOutlined';
+import ObecDrop from "../Menus/DropDowns/ObecDrop";
+import DokumentyDrop from "../Menus/DokumentyDrop/DokumentyDrop";
+import UredniDrop from "../Menus/UredniDrop/UredniDrop";
 
 export default function Header(props) {
   const [isObecDropVisible, setIsObecDropVisible] = useState(false);
   const [isUredniDropVisible, setUredniDropVisible] = useState(false);
-  const [isDokumentyDropVisible, setDokumentyDrop] = useState(false);
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
+  const [isDokumentyDropVisible, setDokumentyDropVisible] = useState(false);
 
   const toggleObecDropVisibility = (e) => {
     e.preventDefault();
     setIsObecDropVisible(!isObecDropVisible);
   };
 
-  const togglUredniDropVisibility = (e) => {
+  const toggleUredniDropVisibility = (e) => {
     e.preventDefault();
     setUredniDropVisible(!isUredniDropVisible);
   };
 
   const toggleDokumentyDropVisibility = (e) => {
     e.preventDefault();
-    setDokumentyDrop(!isDokumentyDropVisible);
+    setDokumentyDropVisible(!isDokumentyDropVisible);
   };
+ {/* responsive menu*/}
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   const toggleMenuVisibility = () => {
     setIsMenuVisible(!isMenuVisible);
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setIsMenuVisible(true);
+      } else{
+        setIsMenuVisible(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -48,15 +60,18 @@ export default function Header(props) {
         <div className="header-logo">
           <img src="src/assets/img/Cimelice_logo.png" alt="logo" />
         </div>
-        
+
         {/* header menu */}
-        <div className={`header-menu ${isMenuVisible ? "show-menu" : ""}`}>
-          <ul className="nav-links">
+        <div
+          className="header-menu"
+          style={{ display: isMenuVisible ? "flex" : "none" }}
+        >
+          <ul className="nav-links" >
             <Link to={"/"}>
               <li>Home</li>
             </Link>
             <Link to={"/uredni"}>
-              <li onClick={togglUredniDropVisibility}>
+              <li onClick={toggleUredniDropVisibility}>
                 Uredni <i className="arrow down"></i>
               </li>
             </Link>
