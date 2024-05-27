@@ -4,13 +4,27 @@ import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import ObecDrop from "../Menus/DropDowns/ObecDrop";
 import AccountMenu from "../Avatar/AccountMenu";
+import DokumentyDrop from "../Menus//DokumentyDrop/DokumentyDrop";
+import UredniDrop from "../Menus//UredniDrop/UredniDrop";
 
-export default function Header() {
+export default function Header(props) {
   const [isObecDropVisible, setIsObecDropVisible] = useState(false);
 
   const toggleObecDropVisibility = (e) => {
-    e.preventDefault(); // Prevent the default link behavior
+    e.preventDefault();
     setIsObecDropVisible(!isObecDropVisible);
+  };
+  const [isUredniDropVisible, setUredniDropVisible] = useState(false);
+
+  const togglUredniDropVisibility = (e) => {
+    e.preventDefault();
+    setUredniDropVisible(!isUredniDropVisible);
+  };
+  const [isDokumentyDropVisible, setDokumentyDrop] = useState(false);
+
+  const toggleDokumentyDropVisibility = (e) => {
+    e.preventDefault();
+    setDokumentyDrop(!isDokumentyDropVisible);
   };
 
   return (
@@ -27,7 +41,9 @@ export default function Header() {
               <li>Home</li>
             </Link>
             <Link to={"/uredni"}>
-              <li>Úřední </li>
+              <li onClick={toggleObecDropVisibility}>
+                Uredni <i class="arrow down"></i>
+              </li>
             </Link>
             <Link>
               <li onClick={toggleObecDropVisibility}>
@@ -38,20 +54,24 @@ export default function Header() {
               <li>Zpravodaj</li>
             </Link>
             <Link to={"/dokumenty"}>
-              <li>Dokumenty</li>
+              <li onClick={toggleObecDropVisibility}>
+                Dokumenty <i class="arrow down"></i>
+              </li>
             </Link>
           </ul>
         </div>
 
         {/* header profile */}
         <div className="header-profile">
-          <AccountMenu/>
+          <AccountMenu />
         </div>
       </div>
 
       <hr />
 
       {isObecDropVisible && <ObecDrop className="header-obecDrop" />}
+      {isUredniDropVisible && <UredniDrop className="header-obecDrop" />}
+      {isDokumentyDropVisible && <DokumentyDrop className="header-obecDrop" />}
     </>
   );
 }
