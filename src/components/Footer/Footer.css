@@ -1,15 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
 
 .footer-container {
- display: flex;
- justify-content: center;
- align-items: center;
- gap: 5rem;
-  height: 35vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: fit-content;
   width: 98%;
   background-color: #0d293e !important;
   color: rgb(255, 255, 255);
- margin: auto;
+  margin: auto;
 }
 
 .footer-container li {
@@ -19,12 +20,10 @@
 .footer-container ul a {
   text-decoration: none !important;
   color: rgb(255, 255, 255);
- 
 }
 
 .footer-block {
   width: 20%;
   height: 220px;
   padding: 20px;
-
 }

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Poppins&family=Quattrocento+Sans&family=Raleway:wght@100;300&family=Roboto:wght@500&display=swap");
 
 .znak-section-container {
-  height: 75vh;
+  height: 60%; /* Change to vh (viewport height) for better responsiveness */
   background-color: #0d293e;
   margin-top: 5rem;
   display: flex;
@@ -12,44 +12,70 @@
   color: rgb(255, 255, 255);
   padding: 3rem;
   font-size: 1rem;
-  font-style: normal !important;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); /* Shadow at the bottom */
+  overflow: hidden;
 }
 
 .znak-img {
+  margin-right: 100px ;
   width: auto;
   max-height: 245px;
-  margin-left: 30px;
   border-radius: 5%;
 }
 
-/*znak text styles*/
-
+/* Znak text styles */
 .znak-text-container {
-  width: 400px;
+  flex: 1; /* Allow this to grow and take available space */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20%;
+  align-items: center;
+  width: 100%; /* Ensure it takes full width */
+  padding: 1rem 0; /* Add some padding for spacing */
+  overflow: hidden;
 }
 
 .znak-text {
-  /* Ikonografie znaku a praporu obce Obec Líbeznice se připomíná poprvé v roce 1236 jako majetek vyšehradské kapituly. V roce 1380 se zde zmiňuje farní kostel zasvěcený sv. Martinovi. Držiteli obce s nejdelší historií byl rod Nosticů. Líbeznice koupil v roce 1665 Jan Hertvík z Nostic. Majetek se rozšířil později o Měšice, které se staly centrem panství. K němu patřily i Líbeznice. Nosticové drželi měšické panství po tři století, až do roku 1945. */
-
-  font-style: normal;
-
   font-size: 17px;
   line-height: 21px;
-
   color: #ffffff;
+  width: 400px;
 }
+
 .znak-list {
-  margin-right: 30px;
-  list-style-type: disc;
+  
+  list-style-type: none;
 }
+
+.znak-list li {
+
+  list-style-type: none;
+}
+
 
 .znak-list-title {
-  margin-left: -17px;
+ 
+  margin-bottom: 1rem; /* Add some space below the title */
 }
 
 .font {
   font-size: 17px;
   line-height: 21px;
+}
 
+@media screen and (max-width: 768px) {
+  .znak-section-container {
+    height: auto; /* Let height adjust based on content */
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .znak-text-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .znak-img {
+    margin: 1rem 0; /* Add some space around images */
+  }
 }

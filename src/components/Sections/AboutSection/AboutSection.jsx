@@ -5,12 +5,8 @@ export default function AboutSection() {
     <>
       <div className="about-section-container">
         <div className="about-container">
-          <img
-            className="news-img"
-            src="src\assets\img\celkovy-pohled-libeznice.jpg"
-            alt=""
-          />
-          <div className="about-text">
+          
+          <div className="about-text-left">
             <h1>O Libezicích</h1>
             <p>
               Libeznice je malá, ale kouzelná obec nacházející se v blízkosti
@@ -19,8 +15,14 @@ export default function AboutSection() {
               historii.
             </p>
           </div>
+          <img
+            className="news-img"
+            src="src\assets\img\celkovy-pohled-libeznice.jpg"
+            alt=""
+          />
         </div>
         <div className="about-container">
+     
           <div className="about-text-left">
             <h1>Příroda a turistika</h1>
             <p>
@@ -30,20 +32,17 @@ export default function AboutSection() {
               různé druhy rostlin a živočichů, což z ní činí atraktivní místo
               pro milovníky přírody.
             </p>
+
           </div>
-          <img
+            <img
             className="news-img"
             src="src\assets\img\libezice3.jpeg"
             alt=""
           />
         </div>
         <div className="about-container">
-          <img
-            className="news-img"
-            src="src\assets\img\libeznice-4-4.jpg"
-            alt=""
-          />
-          <div className="about-text">
+        
+          <div className="about-text-left">
             <h1>Současný život</h1>
             <p>
               V Libeznicích panuje přátelská a komunitní atmosféra. Obyvatelé
@@ -52,7 +51,13 @@ export default function AboutSection() {
               místního podnikání a nabízí různé příležitosti pro rozvoj a
               inovace.
             </p>
+            
           </div>
+          <img
+            className="news-img"
+            src="src\assets\img\libeznice-4-4.jpg"
+            alt=""
+          />
         </div>
       </div>
     </>

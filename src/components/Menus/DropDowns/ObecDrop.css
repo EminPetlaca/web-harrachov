@@ -2,16 +2,23 @@
 
 body .drop-container {
   width: 100%;
-  background-color: rgba(91, 93, 95, 0.7) ;
-  height: 150px;
+  background-color: rgba(91, 93, 95, 0.7);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  margin-top: -15px;
+  align-items: flex-start; /* Align items to the top */
   position: fixed;
+  margin-top: -15px;
+  padding: 15px; /* Add padding to avoid overflow */
+  box-sizing: border-box;
   backdrop-filter: blur(2px); /* Adjust the blur radius as needed */
   -webkit-backdrop-filter: blur(2px); /* For better browser compatibility */
+  overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.drop-menu {
+  flex: 1 1 200px; /* Allow menus to grow and shrink */
+  margin: 10px;
 }
 
 .drop-menu li {
@@ -28,4 +35,19 @@ body .drop-container {
 .drop-menu li:hover {
   font-size: 16.5px; /* Increase font size on hover */
   margin: 1px; /* Adjust margin to compensate for font size increase */
+}
+
+@media screen and (max-width: 768px) {
+  .drop-container {
+    flex-direction: column; /* Stack menus vertically */
+    align-items: stretch; /* Stretch menus to full width */
+    height: auto; /* Let container height adjust based on content */
+    margin-top: 50%;
+    padding: 0;
+  }
+
+  .drop-menu {
+    margin: 5px 0; /* Adjust margins for stacked layout */
+    flex: 1 1 100%; /* Full width for each menu */
+  }
 }

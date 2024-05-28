@@ -10,35 +10,49 @@ export default function Header(props) {
   const [isObecDropVisible, setIsObecDropVisible] = useState(false);
   const [isUredniDropVisible, setUredniDropVisible] = useState(false);
   const [isDokumentyDropVisible, setDokumentyDropVisible] = useState(false);
+  const [isMenuVisible, setIsMenuVisible] = useState(window.innerWidth > 768);
+
+
+  const closeMenu = () => {
+    setIsMenuVisible(false);
+  }
+
+  const turnOffAllDropdowns = () => {
+    setIsObecDropVisible(false);
+    setUredniDropVisible(false); 
+    setDokumentyDropVisible(false);
+    if(window.innerWidth < 768){
+    setIsMenuVisible(false);
+  }
+  }
 
   const toggleObecDropVisibility = (e) => {
+    turnOffAllDropdowns();
     e.preventDefault();
     setIsObecDropVisible(!isObecDropVisible);
   };
 
   const toggleUredniDropVisibility = (e) => {
+    turnOffAllDropdowns();
     e.preventDefault();
     setUredniDropVisible(!isUredniDropVisible);
+
   };
 
   const toggleDokumentyDropVisibility = (e) => {
+    turnOffAllDropdowns();
     e.preventDefault();
     setDokumentyDropVisible(!isDokumentyDropVisible);
   };
- {/* responsive menu*/}
-  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
   const toggleMenuVisibility = () => {
+    turnOffAllDropdowns();
     setIsMenuVisible(!isMenuVisible);
   };
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setIsMenuVisible(true);
-      } else{
-        setIsMenuVisible(false);
-      }
+      setIsMenuVisible(window.innerWidth > 768);
     };
 
     window.addEventListener("resize", handleResize);
@@ -48,7 +62,7 @@ export default function Header(props) {
   return (
     <>
       <div className="header">
-        {/* burger icon menu*/}
+        {/* burger icon menu */}
         <img
           src="src/assets/img/Hamburger_icon.svg.png"
           alt="burger icon"
@@ -66,7 +80,7 @@ export default function Header(props) {
           className="header-menu"
           style={{ display: isMenuVisible ? "flex" : "none" }}
         >
-          <ul className="nav-links" >
+          <ul className="nav-links">
             <Link to={"/"}>
               <li>Home</li>
             </Link>

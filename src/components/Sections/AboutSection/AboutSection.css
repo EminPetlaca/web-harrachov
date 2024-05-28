@@ -1,13 +1,15 @@
 .about-section-container{
-    height: 170vh;
+    height: 70%;
     padding: 2rem;
-   
+    display: flex;
+    flex-direction: column;
 }
 
 .about-container{
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     gap: 8rem;
     align-items: center;
     justify-content: center;
