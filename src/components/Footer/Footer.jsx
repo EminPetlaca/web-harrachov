@@ -6,7 +6,7 @@ export default function Footer() {
     <>
       
       <div className="footer-container">
-        <div className="footer-informace footer-block">
+        <div className="footer-block footer-info">
           <h2>Informace pro vás:</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam

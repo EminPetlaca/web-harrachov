@@ -2,15 +2,15 @@
 
 .footer-container {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
   height: fit-content;
-  width: 98%;
+  width: 100%;
   background-color: #0d293e !important;
   color: rgb(255, 255, 255);
-  margin: auto;
+
 }
 
 .footer-container li {
@@ -25,5 +25,36 @@
 .footer-block {
   width: 20%;
   height: 220px;
-  padding: 20px;
+ 
+}
+
+.footer-info{
+  margin-right:5% ;
+}
+
+
+/*responsivity*/
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    margin-right: 0% ;
+   
+  }
+
+  .footer-block {
+    width: 50%;
+    height: 220px;
+   
+    text-align: center;
+  }
+
+  
+.footer-info{
+  margin-right:0% ;
+  margin-left: 3%;
+}
+
 }

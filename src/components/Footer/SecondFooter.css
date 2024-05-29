@@ -18,3 +18,18 @@
     text-decoration: none;
     padding: 20px;
 }
+
+/*responsivity*/ 
+
+@media screen and (max-width: 768px) {
+    .second-footer-container{
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        background-color: #ffffff !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+  }
