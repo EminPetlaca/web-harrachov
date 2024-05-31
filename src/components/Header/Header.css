@@ -135,3 +135,44 @@ body {
     display: block; /* Display list items as block */
   }
 }
+
+
+@media (min-width: 1024px) {
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+}
+
+@media (min-width: 1440px) {
+  .main-title {
+      font-size: 68px;
+  }
+  .podnadpis {
+      font-size: 40px;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .header {
+    width: 98%;
+    height: 6.5rem;
+    background-color: rgb(255, 255, 255) !important;
+    display: flex;
+    justify-content: space-between;
+  
+    z-index: 10;
+  }
+}

@@ -40,3 +40,31 @@ body {
     font-style: normal;
     margin-top: -15px;
 }
+
+/* Media Queries for larger screens */
+@media (min-width: 768px) {
+    .main-title {
+        font-size: 42px;
+    }
+    .podnadpis {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-title {
+        font-size: 60px;
+    }
+    .podnadpis {
+        font-size: 36px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .main-title {
+        font-size: 68px;
+    }
+    .podnadpis {
+        font-size: 40px;
+    }
+}
