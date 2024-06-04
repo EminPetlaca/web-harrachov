@@ -14,8 +14,6 @@ body {
     margin-top: -15.5px;
     text-align: center;
     height: 80vh;
-   
-   
     box-shadow: 0px 15px 10px -15px #000000;
     display: flex;
     flex-direction: column;
@@ -42,7 +40,7 @@ body {
 }
 
 /* Media Queries for larger screens */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
     .main-title {
         font-size: 42px;
     }
@@ -67,4 +65,4 @@ body {
     .podnadpis {
         font-size: 40px;
     }
-}
+} */
