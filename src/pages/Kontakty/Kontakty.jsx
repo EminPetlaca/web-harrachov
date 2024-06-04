@@ -12,9 +12,10 @@ export default function Kontakty() {
   return (
     <>
       <Header />
+      <h1 className="contact-title">Kontakty</h1>
       <div className="contact-container">
         <div className="contact-container2">
-        <KontaktCard
+          <KontaktCard
             className="contact-item"
             name="Jan Novák"
             function="Starosta"
@@ -56,7 +57,34 @@ export default function Kontakty() {
             mail="eva.mala@example.cz"
             number="+420 736 678 901"
           />
-          
+          <KontaktCard
+            className="contact-item"
+            name="Tomáš Svatoš"
+            function="IT specialista"
+            mail="tomas.svatos@example.cz"
+            number="+420 737 789 012"
+          />
+          <KontaktCard
+            className="contact-item"
+            name="Martina Horáková"
+            function="Projektová manažerka"
+            mail="martina.horakova@example.cz"
+            number="+420 738 890 123"
+          />
+          <KontaktCard
+            className="contact-item"
+            name="Roman Novotný"
+            function="Technický pracovník"
+            mail="roman.novotny@example.cz"
+            number="+420 739 901 234"
+          />
+            <KontaktCard
+            className="contact-item"
+            name="Tomáš Tran"
+            function="Technický pracovník"
+            mail="roman.novotny@example.cz"
+            number="+420 739 901 234"
+          />
         </div>
       </div>
     </>
