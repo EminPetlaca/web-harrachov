@@ -1,0 +1,23 @@
+.info-container{
+    height:140%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+.info-title{
+    text-align: center;
+}
+
+/*responsivity*/
+
+@media screen and (max-width: 768px) {
+    .info-container {
+        height:180%;
+     
+    }
+  
+  }

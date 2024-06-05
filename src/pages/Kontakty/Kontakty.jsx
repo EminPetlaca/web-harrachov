@@ -7,7 +7,11 @@ import CardContent from "@mui/material/CardContent";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import KontaktCard from "../../components/Cards/KontaktCard";
+import Footer from '../../components/Footer/Footer';
+
+
 import "./Kontakty.css";
+import SecondFooter from "../../components/Footer/SecondFooter";
 export default function Kontakty() {
   return (
     <>
@@ -85,8 +89,12 @@ export default function Kontakty() {
             mail="roman.novotny@example.cz"
             number="+420 739 901 234"
           />
+
         </div>
       </div>
+      
+   <Footer/>
+   <SecondFooter/>
     </>
   );
 }

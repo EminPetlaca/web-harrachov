@@ -10,7 +10,7 @@ export default function ObecDrop(props) {
 
         <ul className="drop-menu">
           <li>
-            <Link className="link" to="/verejne-vyhlasky">
+            <Link className="link" to="/zakladinfo">
               Základní informace
             </Link>
           </li>
