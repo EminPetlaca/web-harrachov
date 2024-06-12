@@ -70,7 +70,7 @@ export default function InfoCard() {
               cyklostezky lákají k procházkám a výletům do okolí. Blízkost
               přírody a zelených ploch přispívá k vysoké kvalitě života v obci.
             </p>
-            <h3>Příroda a volný čas</h3>
+           
             <p>
               <h3>Budoucnost</h3>
               <p>

@@ -15,12 +15,12 @@ export default function ObecDrop(props) {
             </Link>
           </li>
           <li>
-            <Link className="link" to="/pozvanky">
+            <Link className="link" to="/zpravodaj">
               Aktuality
             </Link>
           </li>
           <li>
-            <Link className="link" to="/zapisy">
+            <Link className="link" to="/libeznicezpravodaj">
               Líbeznický zpravodaj
             </Link>
           </li>
